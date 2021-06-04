@@ -1,14 +1,49 @@
-set number
+
+"Pluggins
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"colorschemes
+Plug 'morhetz/gruvbox'
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'easymotion/vim-easymotion'
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
+"System
 syntax on
+set number
+set relativenumber
 set expandtab
 set tabstop=2
+set shiftwidth=2
+set smarttab
+set autowrite
+set clipboard=unnamed
+let g:mapleader=','
+set cmdheight=1
+
+"colorscheme
 colorscheme gruvbox
 set background=dark
-let g:mapleader=','
+set t_Co=256
 
-"Mapping to reload config
-nmap <leader>so :source $HOME\_vimrc<CR>
+
+"Support cyrillic 
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+
+
+"Maps
+nmap <Leader>so :w <bar> so $MYVIMRC<CR>
+nmap <Leader>ev :e $HOME\_vimrc<CR>
 map <Leader> <Plug>(easymotion-prefix)
+inoremap jj <ESC>
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
@@ -21,15 +56,7 @@ if has("gui_running")
     set guioptions-=r "scrollbar
     set encoding=utf-8
     set termencoding=utf-8
+    set fileencoding=utf-8
   endif
 endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-"colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'jiangmiao/auto-pairs'
-Plug 'easymotion/vim-easymotion'
-call plug#end()
 
