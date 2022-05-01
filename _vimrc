@@ -1,4 +1,3 @@
-
 "Pluggins
 call plug#begin('~/.vim/plugged')
 
@@ -30,12 +29,16 @@ colorscheme gruvbox
 set background=dark
 set t_Co=256
 
-
 "Support cyrillic 
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
+" Mute sound
+set vb t_vb=
+
+set backspace=indent,eol,start
 
 
 "Maps
