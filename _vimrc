@@ -3,8 +3,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "colorschemes
-Plug 'morhetz/gruvbox'
 
+Plug 'tc50cal/vim-terminal'
+Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
@@ -35,11 +36,12 @@ set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
+
 " Mute sound
 set vb t_vb=
 
+" BackSpace work
 set backspace=indent,eol,start
-
 
 "Maps
 nmap <Leader>so :w <bar> so $MYVIMRC<CR>
@@ -53,7 +55,7 @@ if has("gui_running")
   elseif has("gui_macvim")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win32")
-    set guifont=Consolas:h12:cANSI
+    set guifont=Consolas:h14:cANSI
     set guioptions-=m "menu bar
     set guioptions-=T "toolbar
     set guioptions-=r "scrollbar
