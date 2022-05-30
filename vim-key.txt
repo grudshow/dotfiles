@@ -46,3 +46,6 @@ Ctrl-r - Отмена отмены действия
 gd - перейти в функцию
 Ctrl-d - jumps down half screen
 Ctrl-u - jumps back half screen
+
+D - удаляет до конца строки с места курсора
+f <char> - переход к символу. Пример: fa
