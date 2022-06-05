@@ -19,6 +19,12 @@ map("i", "<C-h>", "<Left>", default_opts)
 -- Сохранение 
 map("n", "<C-s>", "<CR>:w<CR>", default_opts)
 
+-- Выход 
+map("n", "<C-w>", "<CR>:wq<CR>", default_opts)
+
+-- source % 
+map("n", "<leader>so", "<CR>:so %<CR>", default_opts)
+
 -- Window Navigate
 map("n", "<C-h>", "<C-w>h", default_opts)
 map("n", "<C-l>", "<C-w>l", default_opts)
@@ -52,3 +58,8 @@ map("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 map("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 map("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 map("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+
+-- Telescope
+-- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+map("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", default_opts)
+map("n", "<c-t>", "<cmd>Telescope live_grep<cr>", default_opts)

@@ -3,6 +3,7 @@ local cmd = vim.cmd
 
 opt.backup = false 
 
+opt.number = true
 opt.clipboard = "unnamedplus" 
 opt.expandtab = true 
 opt.tabstop = 2 
