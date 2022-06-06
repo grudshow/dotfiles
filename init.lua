@@ -8,6 +8,4 @@ require 'plugins.telescope'
 require 'plugins.treesitter'
 require 'plugins.autopairs'
 require 'plugins.comment'
-require 'plugins.nvim-tree'
-
 

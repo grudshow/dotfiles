@@ -93,7 +93,6 @@ cmp.setup {
       "i",
       "s",
     }),
-
   },
   formatting = {
     fields = { "kind", "abbr", "menu" },
@@ -120,11 +119,8 @@ cmp.setup {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
-
-  window = {
-    documentation = {
-      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-    },
+  documentation = {
+    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
   },
   experimental = {
     ghost_text = false,

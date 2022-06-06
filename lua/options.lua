@@ -23,6 +23,7 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8 
 opt.timeoutlen = 1000
 opt.updatetime = 300
+opt.termguicolors = true,
 
 cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]
