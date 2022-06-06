@@ -63,3 +63,5 @@ map("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 map("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", default_opts)
 map("n", "<c-t>", "<cmd>Telescope live_grep<cr>", default_opts)
+
+map("n", "<leader>e", ":NvimTreeToggle<cr>", default_opts)
