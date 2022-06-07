@@ -9,7 +9,7 @@ vim.g.maplocalleader = ","
 
 -- //INSERT MODE// --
 
--- Смена esc
+-- Смена ESC
 map("i", "jj", "<ESC>", {})
 -- Navigate
 map("i", "<C-h>", "<Left>", default_opts)
@@ -24,6 +24,9 @@ map("n", "<C-w>", "<CR>:wq<CR>", default_opts)
 
 -- source %
 map("n", "<leader>so", ":so %<CR>", default_opts)
+
+-- Open config vim
+map("n", "<leader>ev", ":e $MYVIMRC<CR>", default_opts)
 
 -- Window Navigate
 map("n", "<C-h>", "<C-w>h", default_opts)

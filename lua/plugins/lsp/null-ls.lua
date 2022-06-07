@@ -15,4 +15,5 @@ null_ls.setup {
       "--jsx-single-quote",
     } },
   },
+
 }
