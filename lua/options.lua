@@ -4,6 +4,7 @@ local options = {
   backup = false,
   number = true,
   clipboard = "unnamedplus",
+  completeopt = "menu,menuone,noselect", 
   expandtab = true,
   tabstop = 2,
   mouse = "a",
@@ -23,6 +24,7 @@ local options = {
   timeoutlen = 1000,
   updatetime = 300,
   termguicolors = true,
+  showmode = false,
 
   -- Ignore some folders and files with find
   wildignore = {
@@ -38,8 +40,9 @@ end
 
 cmd [[set laststatus=0]]
 cmd [[set noshowcmd]]
-cmd [[set noshowmode]]
 cmd [[set noruler]]
+
+vim.opt.shortmess:append('c');
 
 cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]

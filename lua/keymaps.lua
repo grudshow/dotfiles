@@ -23,7 +23,7 @@ map("n", "<C-s>", ":Format<CR>:w<CR>", default_opts)
 map("n", "<C-w>", "<CR>:wq<CR>", default_opts)
 
 -- source %
-map("n", "<leader>so", ":so %<CR>", default_opts)
+map("n", "<leader>so", ":source %<CR>", default_opts)
 
 -- Open config vim
 map("n", "<leader>ev", ":e $MYVIMRC<CR>", default_opts)
@@ -68,4 +68,4 @@ map("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('t
 -- map("n", "<c-t>", "<cmd>Telescope live_grep<cr>", default_opts)
 
 -- Tree nvim
-map("n", "<leader>e", ":NvimTreeToggle<cr>", default_opts)
+map("n", "<C-e>", ":NvimTreeToggle<cr>", default_opts)
