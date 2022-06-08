@@ -17,7 +17,7 @@ map("i", "<C-h>", "<Left>", default_opts)
 -- //NORMAL MODE// --
 --
 --Сохранить и форматировать
-map("n", "<C-s>", ":Format<CR>:w<CR>", default_opts)
+map("n", "<C-s>", "<CR>:w<CR>", default_opts)
 
 -- Выход
 map("n", "<C-w>", "<CR>:wq<CR>", default_opts)
