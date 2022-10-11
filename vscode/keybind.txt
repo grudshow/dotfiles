@@ -1,0 +1,99 @@
+[
+	//Замена esc на jj в neovim
+	{
+		"command": "vscode-neovim.compositeEscape1",
+		"key": "j",
+		"when": "neovim.mode == insert && editorTextFocus",
+		"args": "j"
+	},
+	//AutoComplete navigate
+	{
+		"key": "ctrl+j",
+		"command": "selectNextSuggestion",
+		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "selectPrevSuggestion",
+		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+	},
+	//Navigate tabs
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.quickOpenNavigateNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.quickOpenNavigatePrevious",
+		"when": "inQuickOpen"
+	},
+	//Закрыть window
+	{
+		"key": "ctrl+w",
+		"command": "-workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	//Из сайдбара в активнjе jкнj
+	{
+		"key": "ctrl+l",
+		"when": "sideBarFocus",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	// Документация при навидении
+	{
+		"key": "ctrl+e",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	// Пjказ QuickFix
+	{
+		"key": "ctrl+.",
+		"command": "keyboard-quickfix.openQuickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly && neovim.mode === insert"
+	},
+
+	// <Terminal> //
+	//Split terminal
+	{
+		"key": "ctrl+d",
+		"command": "workbench.action.terminal.split",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	//Toggle terminal
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	//Kill terminal
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus"
+	},
+	//Переход к редактору если в терминале
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+x",
+		"command": "workbench.action.toggleMaximizedPanel",
+		"when": "terminalFocus"
+	},
+	//Переключение между терминалами
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus && terminalProcessSupported"
+	}
+	// </Terminal> //
+]
+
+
